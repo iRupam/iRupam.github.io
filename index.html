@@ -1,42 +1,85 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body{
-                background-image:linear-gradient(to right,orange,white,green);
-                text-align:center;
-            }
-            .wrapper{
-                text-align:center;
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  background-image: linear-gradient(to right,orange,white,green);
+}
 
-            }
-            .back1,.back2,.back3{
-                border:5px solid dodgerblue;
-                width:450px;
-                height:200px;
-                background-size: cover;
-                display:inline-block;
-            }
-            .back1{
-                background-image: url(images/pic1.jpg);
-            }
+ul.sidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-            .back2{
-                background-image: url(images/pic2.jpg);
-            }
+ul.sidenav li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
-            .back3{
-                background-image: url(images/pic3.jpg);
-            }
-            
-    
-        </style>
-    </head>
-    <body>
-        <h1>Some Pictures clicked by me</h1>
-        <div class="wrapper">
-        <div class="back1"></div>
-        <div class="back2"></div>
-        <div class="back3"></div>
-        </div>
-    </body>
+ul.sidenav li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+</head>
+<body>
+
+<ul class="sidenav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div class="content">
+  <h1>Welcome to Rupam's site</h1>
+  <p>I use this site to showcase my projects.</p>
+  <p>Although I'm not new to web development, I am still a beginner <mark>(script kiddie)</mark> on this topic.
+  <p>I'll be updating this site a lot both in terms of content and design. So please be <span style="background:red;"> <b>patient<b></span>.</p>
+</div>
+
+</body>
 </html>
