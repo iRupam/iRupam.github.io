@@ -1,0 +1,13 @@
+body{
+    font:60px Harrington;
+    background-color:green;
+    text-align:center;
+    padding-top:300px;
+    padding-bottom:200px;
+}
+.msg{
+    background-color:yellow;
+    color:blue;
+    text-align:center;
+    <!--padding:70px 0;-->
+}
