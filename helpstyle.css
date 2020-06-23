@@ -2,9 +2,18 @@ body{
     font:60px Harrington;
     background-color:green;
     text-align:center;
-    padding-top:300px;
-    padding-bottom:200px;
+    
 }
+
+.master{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+.pic{
+    padding: 10px;
+}
+
 .msg{
     background-color:yellow;
     color:blue;
